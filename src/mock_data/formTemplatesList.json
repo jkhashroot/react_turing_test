@@ -1,0 +1,125 @@
+{
+   "name": "Metadata - 1",
+   "value": [
+      {
+         "id": "c980146e-00af-427c-83dc-5a41d9798613",
+         "element": "Dropdown",
+         "label": {
+            "blocks": [
+               {
+                  "key": "evinb",
+                  "text": "Placeholder Label",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+               }
+            ],
+            "entityMap": {}
+         },
+         "required": false,
+         "options": [
+            {
+               "id": "aed12cdd-c8b0-4fc5-a9f7-e04abbed6fbf",
+               "value": "Option1"
+            },
+            {
+               "id": "083702d1-5697-455d-b1d0-20ac847021cd",
+               "value": "Option2"
+            }
+         ]
+      },
+      {
+         "id": "db8631ca-db8f-4ce6-8580-a6861e18035e",
+         "element": "Checkboxes",
+         "label": {
+            "blocks": [
+               {
+                  "key": "bdcsa",
+                  "text": "Placeholder Label",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+               }
+            ],
+            "entityMap": {}
+         },
+         "required": false,
+         "options": [
+            {
+               "id": "fe444d3f-7168-4a9d-83e6-171fe48a7135",
+               "value": "Option1",
+               "checked": false
+            },
+            {
+               "id": "7ba569cb-bd6b-41c5-83d0-4c6bf5fa5b36",
+               "value": "Option2",
+               "checked": false
+            }
+         ]
+      },
+      {
+         "id": "6238f0cb-4a1c-40a2-ae13-c833791eade4",
+         "element": "TextInput",
+         "required": false,
+         "label": {
+            "blocks": [
+               {
+                  "key": "d5r9r",
+                  "text": "Placeholder Label",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+               }
+            ],
+            "entityMap": {}
+         },
+         "value": ""
+      },
+      {
+         "id": "8907a147-6379-477f-adee-5140f22e5f45",
+         "element": "TextArea",
+         "required": false,
+         "label": {
+            "blocks": [
+               {
+                  "key": "eiu6r",
+                  "text": "Placeholder Label",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+               }
+            ],
+            "entityMap": {}
+         },
+         "value": ""
+      },
+      {
+         "id": "cf045663-e71a-4aad-935a-db96227823dd",
+         "element": "HyperLink",
+         "label": {
+            "blocks": [
+               {
+                  "key": "cg33n",
+                  "text": "Placeholder Label",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+               }
+            ],
+            "entityMap": {}
+         },
+         "required": false,
+         "value": ""
+      }
+   ]
+}

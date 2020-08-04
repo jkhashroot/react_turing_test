@@ -1,0 +1,174 @@
+.container-fluid {
+    padding: 30px;
+}
+
+.btn {
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 12px;
+    text-transform: uppercase;
+    @extend .flexbox;
+    @extend .all-center;
+    @include border-radius(2px);
+    @include transition (all 0.8s ease-in-out);
+
+    &:focus,
+    &:active,
+    &:hover,
+    &:visited,
+    &:focus-within {
+        @include box-shadow(0, 0, 0, 0 !important);
+        @include transition (all 0.8s ease-in-out);
+    }
+
+    &.btn-primary {
+        color: $white-color;
+        border-color: #33dbff;
+        @include linear-gradient(to bottom, ($gradient-bg));
+        @include transition (all 0.8s ease-in-out);
+
+        &:focus,
+        &:active,
+        &:hover,
+        &:visited,
+        &:focus-within {
+            background: #00b8df;
+            @include transition (all 0.8s ease-in-out);
+        }
+    }
+
+    i {
+        flex: 0 auto;
+        font-size: 16px;
+        margin-right: 8px;
+    }
+
+    span {
+        flex: 0 auto;
+    }
+
+    &.icon {
+        padding: 0;
+        border: 0 !important;
+        background: transparent !important;
+
+        i {
+            color: $text-color;
+        }
+        &:hover{
+            background: transparent;
+        }
+    }
+
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    @include border-radius(4px);
+    @include box-shadow(0, 0, 0, transparent);
+    @include transition (all 0.3s ease-in-out);
+    font-size: 13px;
+    padding: 0 15px;
+    line-height: 34px;
+    overflow: hidden;
+    border: #e7e6e6 solid 1px;
+
+    &:focus,
+    &:hover,
+    &:active {
+        outline: 0;
+        @include box-shadow(0, 0, 0, transparent);
+        @include transition (all 0.3s ease-in-out);
+    }
+}
+
+.alert {
+    margin-bottom: 0px;
+}
+
+.card {
+    @include border-radius(3px);
+    border-color: $border-color;
+
+    &-header {
+        @extend .flexbox;
+        @extend .item-center;
+        background-color: $white-color;
+
+        .controls {
+            margin-left: auto;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 0;
+        }
+    }
+
+    &-body {
+        margin: 0;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    &-footer {
+        @extend .flexbox;
+
+        button {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.ant-modal-header {
+    padding: 20px;
+}
+
+.ant-select {
+    flex: 1 auto;
+
+    .ant-select-selection {
+        @include border-radius(0);
+        @include box-shadow(0, 0, 0, transparent);
+        @include transition (all 0.3s ease-in-out);
+        font-size: 13px;
+        display: block;
+        padding: 0;
+        height: 30px;
+        overflow: hidden;
+        border-color: #707070;
+    }
+}
+
+.dropdown-menu {
+    padding: 0;
+    border: 0;
+    width: auto !important;
+    top: 100% !important;
+    @include border-radius(2px);
+    @include box-shadow(0, 1px, 6px, rgba(0, 0, 0, 0.3));
+    @include transition(all 0.3s ease-in-out);
+    @include transform(translate(0, 20px) !important);
+
+    &.show {
+        @include transform(translate(0, 0px) !important);
+    }
+
+    &__item {
+        font-size: 13px;
+        padding: 6px 10px;
+        width: auto !important;
+
+        &.active {
+            @include linear-gradient(to right, ($gradient-bg));
+        }
+    }
+}

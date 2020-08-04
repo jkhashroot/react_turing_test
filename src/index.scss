@@ -1,0 +1,94 @@
+
+
+@import './sass/main.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px $white-color inset;
+}
+
+button,
+input,
+textarea {
+    @include box-shadow(0, 0, 0, rgba(255, 255, 255, 0));
+
+    &:hover,
+    &:visited,
+    &:focus,
+    &:active {
+        @include box-shadow(0, 0, 0, rgba(255, 255, 255, 0));
+        outline: 0;
+    }
+}
+
+img {
+    border: 0;
+    outline: 0;
+    max-width: 100%;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover,
+    &:visited,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+html,
+body {
+    height: 100% !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-web;
+    background: $gray-color;
+    color: $text-color;
+    line-height: 1.428;
+    font-weight: 400;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content-body {
+  padding: 20px;
+  min-height: 100vh;
+}
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 78vh;
+}
+#components-layout-demo-top .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+.left-section{
+  margin-top: 5rem;
+}
+
